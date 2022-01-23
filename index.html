@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="results.html" method="GET"  enctype="multipart/form-data">
+        <h1>Contact Form 
+            <span>Please fill all the texts in the fields.</span>
+        </h1>
+        <div>
+            <span>Name :</span>
+            <input id="name" type="text" name="name" placeholder="Your Full Name" />
+        </div>
+        
+        <div>
+            <span>Your Email :</span>
+            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+        </div>
+        
+        <div>
+            <span>Wants to be Contacted ?</span>
+            <label for="Yes">Yes</label>
+            <input class="mc" type="radio" name="contact?" id="Yes" value="Yes">
+
+            <label for="No">No</label>
+            <input class="mc" type="radio" name="contact?" id="No" value="No">
+        </div>
+
+        <div>
+            <span >Birthdate :</span>
+            <input type="date" name="date" id="date" min="1940-01-01">
+        </div>
+
+        <div>
+              <span>Gender :</span>
+              <label for="male">Male</label>
+              <input class="mc" type="radio" name="gender" id="male" value="male">
+
+              <label for="female">Female</label>
+              <input class="mc" type="radio" name="gender" id="female" value="female">
+
+              <label for="female">Other</label>
+              <input class="mc" type="radio" name="gender" id="Other" value="Other">
+
+
+        </div>
+
+        <div>
+            <span>Message :</span>
+            <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+        </div> 
+
+        <div class="hear">
+            <span>How did you hear about me:</span><select name="selection">
+                <option value="Classmate">Classmate</option>
+                <option value="Resume Submission">Resume Submission</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Coding Academy Rec">Coding Academy Rec</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+         
+    </form>
+</body>
+</html>
